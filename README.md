@@ -8,7 +8,7 @@ Minseok Jeong*<sup>1</sup>, Yechan Lee*<sup>1</sup>, Hyewon Choi<sup>1</sup>, Je
 
 <sup>1</sup> KAIST · <sup>2</sup> University of Washington
 
-<strong>*</strong> Co-first authors
+<strong>*</strong> Co-first authors. †Corresponding author.
 
 [Paper](https://openreview.net/forum?id=yYvDH6yl2q)
 
@@ -54,7 +54,6 @@ Run from the repository root (`RFF-RND/`). Both commands read experiment setting
 
 Load the config file and start offline RL training.
 
-Train Offline RL:
 
 ```bash
 python offline/train_offline_rl.py offline/config/train_default_config.yaml
