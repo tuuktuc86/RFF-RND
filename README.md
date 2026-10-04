@@ -4,7 +4,7 @@
 
 NeurIPS 2026
 
-Minseok Jeong<strong>*</strong><sup>1</sup>, Yechan Lee<strong>*</strong><sup>1</sup>, Hyewon Choi<sup>1</sup>, Jeongyong Yang<sup>2</sup>, SooJean Han<sup>1,†</sup>
+Minseok Jeong*<sup>1</sup>, Yechan Lee*<sup>1</sup>, Hyewon Choi<sup>1</sup>, Jeongyong Yang<sup>2</sup>, SooJean Han<sup>1,†</sup>
 
 <sup>1</sup> KAIST · <sup>2</sup> University of Washington
 
@@ -24,12 +24,12 @@ Random Network Distillation (RND) is a scalable novelty signal for RL based on a
 RFF-RND/
 ├── README.md
 ├── environment.yml
-├── assets/                     # Figures
-├── offline/                    # D4RL offline RL
+├── assets/                     
+├── offline/                    
 │   ├── config/
 │   ├── src/
 │   └── train_offline_rl.py
-└── online/                     # Atari online RL
+└── online/                     
     ├── configs/
     ├── main.py
     └── run.sh
@@ -52,9 +52,9 @@ Run from the repository root (`RFF-RND/`). Both commands read experiment setting
 
 ### Offline RL
 
-Config: [`offline/config/train_default_config.yaml`](offline/config/train_default_config.yaml), which also loads the environment, algorithm, and uncertainty configs in [`offline/config/`](offline/config/).
+Load the config file and start offline RL training.
 
-Train on D4RL HalfCheetah:
+Train Offline RL:
 
 ```bash
 python offline/train_offline_rl.py offline/config/train_default_config.yaml
@@ -62,9 +62,8 @@ python offline/train_offline_rl.py offline/config/train_default_config.yaml
 
 ### Online RL
 
-Config: [`online/configs/config_RFF_MontezumaRevenge.conf`](online/configs/config_RFF_MontezumaRevenge.conf).
+Load the config file and start online RL training.
 
-Train on Atari MontezumaRevenge:
 
 ```bash
 python online/main.py online/configs/config_RFF_MontezumaRevenge.conf
