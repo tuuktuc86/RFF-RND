@@ -23,7 +23,7 @@ Random Network Distillation (RND) is a scalable novelty signal for RL based on a
 ```text
 RFF-RND/
 ├── README.md
-├── requirements.txt
+├── environment.yml
 ├── assets/                     # Figures
 ├── offline/                    # D4RL offline RL
 │   ├── config/
@@ -40,9 +40,8 @@ RFF-RND/
 From the repository root (`RFF-RND/`):
 
 ```bash
-conda create -n rff-rnd python=3.10 -y
+conda env create -f environment.yml
 conda activate rff-rnd
-python -m pip install -r requirements.txt
 ```
 
 Offline RL requires MuJoCo 2.1 installed and connected through `LD_LIBRARY_PATH`.
