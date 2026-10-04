@@ -1,0 +1,9 @@
+defaults:
+  - env: halfcheetah/medium
+  - _self_
+
+device: "cuda"
+
+n_episodes: 100
+target_dir: "???"
+render: false

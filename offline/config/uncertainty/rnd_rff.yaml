@@ -1,0 +1,11 @@
+name: "rnd_rff"
+
+hidden_dim: 256
+output_dim: 128
+lr: 1e-6
+
+predictor_conditioning: "film"
+predictor_num_layers: 2
+
+# GFF target kernel hyperparameter.
+lengthscale: 3.0

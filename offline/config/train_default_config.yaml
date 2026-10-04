@@ -1,0 +1,21 @@
+defaults:
+  - algorithm: sac_uncertainty
+  - env: halfcheetah/expert
+  - uncertainty: rnd_rff
+  - _self_
+
+
+device: "cuda"
+project_name: "halfcheetah/expert"
+
+batch_size: 1024
+
+max_epochs: 100
+log_every_epochs: 1  
+eval_every_epochs: 10  
+rnd_training_epochs: 100
+hydra:
+  run:
+    dir: runs/${project_name}/${env.dataset_name}_${algorithm.name}_${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: true  
